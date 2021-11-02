@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Elliptical Shapes</title>
+		<style type="text/css">
+			p {
+				/*chỉ định cỡ và màu cho đường viền */
+				border: 5px solid #ee3e80;
+				/*tạo không gian xung quanh nội dung */
+				padding: 10px;
+				/*chiều rộng của thành phần */
+				width: 100px;
+				/*chiều cao của thành phần */
+				height: 100px;
+				/*chia khổi và nằm cùng trên cùng một hàng*/
+				display: inline-block;
+				/*canh lề cho thành phần */
+				margin: 20px;
+			}
+			p.one {
+				/*Góc trên - bên trái sẽ được uốn cong.*/
+				border-top-left-radius: 80px 50px;
+				-moz-border-radius-top-left: 80px 50px;
+				-webkit-border-radius-top-left: 80px 50px;
+			}
+			p.two {
+				/*đường viền đượng uốn conh */
+				border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+				-moz-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+				-webkit-border-radius:  1em 4em 1em 4em / 2em 1em 2em 1em;
+			}
+			p.three {
+				/*tạo không gian xung quanh nội dung */
+				padding: 0px;
+				/*đường viền sẽ được uốn cong */
+				border-radius: 100px;
+				-moz-border-radius: 100px;
+				-webkit-border-radius: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="one"></p>
+		<p class="two"></p>
+		<p class="three"></p>
+	</body>
+</html>

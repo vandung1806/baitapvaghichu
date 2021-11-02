@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Overflow</title>
+		<style type="text/css">
+			body {
+				/*chọn phông chữ*/
+				font-family: Arial, Verdana, sans-serif;
+				/*chọn màu cho chữ*/
+				color: #111111;
+				/*chọn kích cỡ cho chữ */
+				font-size: 90%;
+				/*khoản cách giữa các dòng */
+				line-height: 1.2em;
+				/*chiều rộng */
+				width: 200px;
+			}
+			h2 {
+				/*chọn màu*/
+				color: #0088dd;
+				/*chọn màu và cỡ cho viền dưới*/
+				border-bottom: 1px solid #0088dd;
+			}
+			p {
+				/*Chiều cao tối thiểu tính từ mép trên cùng của thành phần*/
+				min-height: 30px;
+				/*Chiều cao tối đa tính từ mép trên cùng của thành phần*/
+				max-height: 85px;
+			}
+			p.one {
+				/*Khi chiều cao của box không đủ chứa text, thì text bị tràn sẽ được dấu đi.*/
+				overflow: hidden
+			}
+			p.two {
+				/*xuất hiện thanh scroll, khi cuộn sẽ hiển thị text khi bị thừa text*/
+				overflow: scroll;
+			}
+		</style>
+	</head>
+	<body>
+	<h2>Fender Stratocaster</h2>
+	<p class="one">The Fender Stratocaster or "Strat" is one of the most popular electric guitars of all time, and its design has been copied by many guitar makers. It was designed by Leo Fender, George Fullerton and Fredie Tavares in 1954.</p>
+	<h2>Gibson Les Paul</h2>
+	<p class="two">The Gibson Les Paul is a solid body electric guitar that was first sold in 1952. The Les Paul was designed by Ted McCarty in collaboration with popular guitarist Les Paul, whom Gibson enlisted to endorse the new model. It is one of the most well-known electric guitar types in the world.</p>
+	</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Box Shadow</title>
+	<style type="text/css">
+		p {
+			/*chiều rộng của thành phần */
+			width: 100px;
+			/*chiều cao của thành phần*/
+			height: 100px;
+			/*chọn màu cho background */
+			background-color: #e1ddda;
+			/*canh lề cho thành phần */
+			margin: 20px;
+			/*chia khổi và nằm cùng trên cùng một hàng*/
+			display: inline-block;
+		}
+
+		p.one {
+			-moz-box-shadow: -5px -5px #777777;
+			-webkit-box-shadow: -5px -5px #777777;
+			box-shadow: -5px -5px #777777;
+		}
+
+		p.two {
+			-moz-box-shadow: 5px 5px 5px #777777;
+			-webkit-box-shadow: 5px 5px 5px #777777;
+			box-shadow: 5px 5px 5px #777777;
+		}
+
+		p.three {
+			-moz-box-shadow: 5px 5px 5px 5px #777777;
+			-webkit-box-shadow: 5px 5px 5px 5px #777777;
+			box-shadow: 5px 5px 5px 5px #777777;
+		}
+
+		p.four {
+			-moz-box-shadow: 0 0 10px #777777;
+			-webkit-box-shadow: 0 0 10px #777777;
+			box-shadow: 0 0 10px #777777;
+		}
+
+		p.five {
+			-moz-box-shadow: inset 0 0 10px #777777;
+			-webkit-box-shadow: inset 0 0 10px #777777;
+			box-shadow: inset 0 0 10px #777777;
+		}
+	</style>
+</head>
+
+<body>
+	<p class="one">ONE</p>
+	<p class="two">TWO</p>
+	<p class="three">THREE</p>
+	<br />
+	<p class="four">FOUR</p>
+	<p class="five">FIVE</p>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Visibility</title>
+	<style type="text/css">
+		body {
+			/*chọn phông chữ */
+			font-family: Arial, Verdana, sans-serif;
+			/*chợn màu cho chữ*/
+			color: #111111;
+		}
+
+		li {
+			/*xác định thành phần được hiển thị theo chiều ngang*/
+			display: inline;
+			/*Canh lề bên phải cho thành phần*/
+			margin-right: 10px;
+		}
+
+		li.coming-soon {
+			/*phần tử trở thành vô hình nhưng nó vẫn chiếm không gian*/
+			visibility: hidden;
+			/* display: none; */
+		}
+	</style>
+</head>
+
+<body>
+	<ul>
+		<li>Home</li>
+		<li>Products</li>
+		<li class="coming-soon">Services</li>
+		<li>About</li>
+		<li>Contact</li>
+	</ul>
+</body>
+</html
